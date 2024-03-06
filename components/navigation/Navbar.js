@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import MenuButton from '@/app/components/MenuButton';
 
 function Navbar() {
+
   return (
     <div>
       {/* top nav start  */}
@@ -39,7 +41,7 @@ function Navbar() {
       <nav className="navbar navbar-light bottom-nav-borders">
         <div className="container-fluid">
           <a className="navbar-brand">Navbar</a>
-          <button className='menu-btn'>Menu</button>
+          <MenuButton/>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
