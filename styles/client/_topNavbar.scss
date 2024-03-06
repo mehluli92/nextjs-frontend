@@ -1,0 +1,22 @@
+.top-nav{
+    background-color: $danger;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .btn-largest{
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.menu-items{
+    background-color: $danger;
+    width: 95%;
+    color: $white;
+    font-size: 0.8rem;
+}

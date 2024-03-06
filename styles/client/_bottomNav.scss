@@ -1,0 +1,62 @@
+.fav-btn{
+    background-color: #006CB7; 
+    border: none;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    .btn-icon{
+        color: $white;
+    }
+}
+
+.shop-btn{
+    background-color: #173058;
+    border: none;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    .btn-icon{
+        color: $white;
+    }
+}
+
+.truck-icon{
+    color: $icon-light-blue;
+    font-size: 36px;
+}
+
+.shop-icon{
+    display: none;
+    color: $icon-light-blue;
+    font-size: 36px;
+}
+
+.bottom-nav-borders{
+    border-bottom: 0.05px solid;
+    border-top: 0.05px solid;
+    border-color: $gray-tm;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .menu-btn{
+        background-color: $white;
+        border: none;
+    }
+}
+
+.search-items{
+    background-color: #F1F1F1;
+}
+
+.search-btn{
+    background-color: #F1F1F1;
+}
