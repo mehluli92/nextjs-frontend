@@ -9,7 +9,7 @@ export default function MenuButton() {
   return (
     <div>
         <button onClick={menu} className='menu-btn'>
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
         </button>
     </div>
   )

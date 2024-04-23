@@ -21,13 +21,13 @@ function Navbar() {
           <div>
             <button className='fav-btn'>
               <span className="material-symbols-outlined">favorite</span>
-              <p className='fw-bold p-0 m-0'>FAVOURITES</p>
+              <p className='p-0 m-0'>FAVOURITES</p>
             </button>
           </div>
           <div>
             <button className='shop-btn'>
             <span className="material-symbols-outlined">list</span>
-              <p className='fw-bold p-0 m-0'>SHOPPING LIST</p>
+              <p className='p-0 m-0'>SHOPPING LIST</p>
             </button>
           </div>
           <span className="material-symbols-outlined truck-icon">shopping_cart</span>

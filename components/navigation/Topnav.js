@@ -24,6 +24,9 @@ function Topnav() {
             <li><Link className="dropdown-item text-white" href="#">MANICALAND REGION ZIMBABWE</Link></li>
             <li><Link className="dropdown-item text-white" href="#">MASHONALAND CENTRAL REGION ZIMBABWE</Link></li>
           </ul>
+          <div className='login-register'>
+            <div className='login'>LOGIN</div> | <div className='register'>REGISTER</div>
+          </div>
     </div>
   )
 }

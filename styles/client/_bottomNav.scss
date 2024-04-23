@@ -1,25 +1,26 @@
 .fav-btn{
-    background-color: #006CB7; 
+    background-color: $tm-light-blue; 
     border: none;
     color: $white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    display: flex;
+    font-size: 15px;
+    padding: 10px 10px;
     .btn-icon{
         color: $white;
     }
 }
 
 .shop-btn{
-    background-color: #173058;
+    background-color: $tm-dark-blue;
     border: none;
     color: $white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    display: flex;
+    font-size: 15px;
+    padding: 10px 10px;
     .btn-icon{
         color: $white;
     }
