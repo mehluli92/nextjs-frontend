@@ -1,5 +1,6 @@
 import Head from 'next/head';
-
+import Corousel from '@/components/navigation/Corousel';
+import Card from '@/components/cards/card';
 export default function Home() {
   return (
     <>
@@ -7,9 +8,12 @@ export default function Home() {
         <title>TM Pick n Pay Zimbabwe</title>
         <meta name='description' content='TM picknpay' />
       </Head>
-      <main className='container'>
-       
-      </main>
+      <div className='banner-slider-section'>
+        <Corousel/>
+      </div>
+      <div className='shop-locator-section'>
+        <Card/>
+      </div>
    </>
   );
 }
