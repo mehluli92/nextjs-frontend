@@ -1,0 +1,18 @@
+.aisle-card{
+    align-items: center;
+    margin: 1rem;
+    border-style: none;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+.call-to-action{
+    background-color: white;
+    color: black;
+    border: 2px solid $danger;
+    padding: 10px 24px;
+    margin: 0.5rem;
+}
+.xcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

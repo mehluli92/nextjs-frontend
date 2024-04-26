@@ -1,0 +1,21 @@
+.top-card{
+    border-style: solid;
+    border-color: $gray-tm;
+    border-radius: 1px;
+    margin: 1rem;
+    align-items: center;
+}
+
+.top-card-content{
+    text-decoration: none;
+    // border-right: solid;
+    // border-color: $gray-tm;
+    color: $dark;
+    font-weight: 600;
+    width: 100%;
+    &:after{
+        content: "\a";
+        white-space: pre;
+    }
+}
+

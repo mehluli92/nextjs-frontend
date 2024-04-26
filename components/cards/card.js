@@ -1,15 +1,27 @@
 import React from "react";
+import Link from "next/link";
 
 function Card(){
+   return(
     <>
-    Card
-        {/* <div className="card" style="width: 18rem;">
+        <div className="card top-card">
             <div className="card-body">
-                <h5 className="card-title">General card</h5>
-                
+                <Link className="top-card-content" href="">
+                    SHOP LOCATOR
+                </Link>
+                <Link className="top-card-content" href="">
+                    MY ACCOUNT
+                </Link>
+                <Link className="top-card-content" href="">
+                    HELP AND SUPPORT
+                </Link>
+                <Link className="top-card-content" href="">
+                    FAQs
+                </Link>
             </div>
-        </div> */}
+        </div>
     </>
+   );
 }
 
 export default Card;

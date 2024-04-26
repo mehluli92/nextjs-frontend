@@ -1,0 +1,28 @@
+html, body{
+    overflow-x: hidden;
+}
+
+.section-title{
+    color: $danger;
+    font-size: $h4-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 0.5rem;
+        vertical-align: bottom;
+        width: 100%;
+        margin-right: -100%;
+        margin-left: 10px;
+        border-top: 1px solid $gray-tm;
+    }
+}
+.aisle-card-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
