@@ -1,17 +1,37 @@
-import React from "react";
-
-function ProductCard(){
-    <>
-        <div className="card" style="width: 18rem;">
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
-            </div>
-        </div>
-    </>
+import React from 'react';
+function ProductCard(props){
+    const stockStatus= props.stockStatus;
+    if(stockStatus === 'true'){
+        return(
+            <>
+                <div className="card">
+                    <div className="card-body">
+                    <img src={props.imageUrl} />
+                    <b>{props.name}</b> <br/>
+                    <b>${props.price}</b>
+                    </div>
+                </div>
+            </>
+           );
+    } else{ 
+        return(
+            <>
+                <div className="product-card">
+                    <div className='productStatus stock-text'>Out of Stock</div>
+                    <div className="container m-0">
+                    <img src={props.imageUrl} />
+                    <div className='product-name'>{props.name}</div>
+                    <div className='product-price pt-2'>${props.price}</div>
+                    <div className='pt-3'>
+                        <textarea className='product-text-area' rows="1" cols="2"/> 
+                        <button className='product-button'>Add To Cart</button>
+                    </div>
+                    </div>
+                </div>
+            </>
+           );
+    }
+   
 }
 
 export default ProductCard;

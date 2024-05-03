@@ -2,12 +2,14 @@ import Head from 'next/head';
 import Corousel from '@/components/navigation/Corousel';
 import Card from '@/components/cards/card';
 import AisleCard from '@/components/cards/aisle-card';
+import TopDeals from '@/components/products/top-deals';
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>TM Pick n Pay Zimbabwe</title>
-        <meta name='description' content='TM picknpay' />
+        <meta className='description' content='TM picknpay' />
       </Head>
       <div className='banner-slider-section'>
         <Corousel/>
@@ -37,7 +39,7 @@ export default function Home() {
         Top Online deals
       </div>
       <div className='top-online-deal-section'> 
-        
+        <TopDeals/>
       </div>
    </>
   );

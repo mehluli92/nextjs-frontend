@@ -1,0 +1,36 @@
+.product-card{
+    margin: 10%;
+    border-style: solid;
+    border-color: $gray-tm;
+    border-width: 1px;
+}
+.productStatus{
+    margin-top: 2px;
+    background-color: $tm-light-red;
+    width: 100%;
+}
+
+.stock-text{
+    color: $white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.product-name{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.product-price{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.product-text-area{
+    margin: 2px;
+}
+
+// .product-button{
+
+// }
