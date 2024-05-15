@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import ProductCard from '../cards/product-card'

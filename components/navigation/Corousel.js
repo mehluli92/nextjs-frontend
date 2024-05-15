@@ -13,17 +13,34 @@ function Corousel() {
                   '/img/Price-Cut-Banner-5-scaled.jpeg'
                 ];
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container pt-3">
-        {images.map(
-          (src, index)=>(
-            <div className='embla__slide' key={index}>
-                <img src={src} className='embla__image'/>
+    <>
+              {/* <!-- full screen slider --> */}
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                {
+                images.map( (image)=>(
+                  <div key={image.id}>
+                    <div className="carousel-item active">
+                    <img src={image} className="d-block w-100" alt="image"/>
+                    </div>
+                  </div>
+                )
+                )
+                }
+
             </div>
-          )
-        )}
-      </div>
-    </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+
+            </a>
+        </div>
+    </>
   )
 }
 

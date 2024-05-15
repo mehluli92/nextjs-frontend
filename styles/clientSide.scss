@@ -1,14 +1,20 @@
-@import "./client/customVariables";
-@import "./client/bootstrap";
-@import "./client/topNavbar";
-@import "./client/bottomNav";
-@import "./client/footer";
-@import "./client/corousel";
-@import "./client/card";
-@import "./client/body";
-@import "./client/aisleCard";
-@import "./client/product";
+// @import "./client/customVariables";
+// @import "./client/bootstrap";
+// @import "./client/topNavbar";
+// @import "./client/bottomNav";
+// @import "./client/footer";
+// @import "./client/corousel";
+// @import "./client/card";
+// @import "./client/body";
+// @import "./client/aisleCard";
+// @import "./client/product";
+@import "./client/allStyles.scss";
 
 
-//Google fonts
+/* icons fonts */
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+
+
+

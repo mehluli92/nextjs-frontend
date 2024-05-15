@@ -1,0 +1,406 @@
+/* define color variables */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #c11f48;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --favorite-color-hover: #0056b3;
+    --favorite-color: #006cb7;
+    --shopping-color-hover: #0d47a1;
+    --shopping-color: #173058;
+    --line-color: #a2a4a5;
+    --input-bg-color: #edeef0;
+    --footer-bg-color: #dcdde0;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+}
+
+/* icons fonts */
+
+/* carousel display one product at a time on mobile */
+
+
+/* remove rounded corners from btn */
+
+.btn {
+    border-radius: 0;
+}
+
+.hr1 {
+    color: var(--line-color);
+}
+
+.badge-color {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.secondary-box-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.secondary-box-btn:hover {
+    background-color: var(--favorite-color);
+    color: #fff;
+}
+
+
+/* quantity input field */
+
+.quantity {
+    width: 40%;
+}
+
+
+/* change carousel slider arrow colors */
+
+
+/* Align carousel controls to the right */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--shopping-color);
+}
+
+.carousel-control-prev-icon {
+    left: 0;
+    right: auto;
+}
+
+.carousel-control-next-icon {
+    right: 0;
+    left: auto;
+}
+
+
+/* card image */
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.star-rating i {
+    color: var(--secondary-color);
+}
+
+
+/* button padding */
+
+.btn-padding {
+    padding: 15px 40px;
+}
+
+.nav-txt {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.headings {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.aisle-img {
+    width: 50%;
+}
+
+
+/* add spacing between ul items */
+
+.list-items li {
+    margin: 0 10px;
+}
+
+
+/* style search box and put icon to right */
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 30px;
+    width: 100%;
+    background-color: var(--input-bg-color);
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-box input {
+    border: 1px solid var(--line-color);
+    border-radius: 0;
+}
+
+
+/* header-icons */
+
+.header-icons i {
+    margin: 0 0 0 30px;
+    font-size: 35px;
+    color: var(--favorite-color);
+}
+
+.login-form {
+    border: 1px solid var(--line-color);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* bottom icons */
+
+.bottom-icons i {
+    color: var(--favorite-color);
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar-custom {
+    background-color: var(--secondary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #fff;
+}
+
+.login-header .navbar-brand {
+    margin: 0 0 0 30px;
+}
+
+.login-header .login-reg-txt {
+    margin: 0 30px 0 30px;
+    font-weight: bold;
+}
+
+.header-btns button {
+    margin: 0 10px;
+}
+
+.btn-favorite {
+    background-color: var(--favorite-color);
+    color: #fff;
+}
+
+.btn-shopping {
+    background-color: var(--shopping-color);
+    color: #fff;
+}
+
+.btn-favorite:hover,
+.btn-shopping:hover {
+    color: #fff;
+    background-color: var(--favorite-color-hover);
+}
+
+.footer-links {
+    color: #000;
+}
+
+.footer-links ul li a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 20px 0;
+}
+
+
+/****************** style select dropdown form *********************************/
+
+
+/* The container must be positioned relative: */
+
+.custom-select {
+    position: relative;
+    width: 300px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: var(--secondary-color);
+}
+
+
+/* Style the arrow inside the select element: */
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/* style the items (options), including the selected item: */
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 2px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Style items (options): */
+
+.select-items {
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/****************** end  style select dropdown form *********************************/
+
+
+/* change font size for mobile screen */
+
+@media only screen and (max-width: 600px) {
+    .btn-txt {
+        font-size: 13px;
+    }
+}
+
+
+/**************** custom slide css ***************************************/
+
+.carousel-item .col {
+    padding: 0 5px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none !important;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block !important;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex !important;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+    /*  half slides CSS */
+    .prodCarousel .carousel-inner:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        left: 0;
+        content: "";
+        display: block;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .prodCarousel .carousel-inner:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        content: "";
+        display: block;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .prodCarousel .carousel-control-prev {
+        left: 0% !important;
+    }
+    .prodCarousel .carousel-control-next {
+        right: 0% !important;
+    }
+}

@@ -4,7 +4,10 @@ import { useEffect } from "react";
 
 function BootstrapClient() {
     useEffect(() => {
-        require('bootstrap/dist/js/bootstrap.bundle.min.js');
+        import('bootstrap');
+        // import('bootstrap/dist/js/bootstrap.bundle.min.js');
+        import('./script');
+
       }, []);
     
       return null;

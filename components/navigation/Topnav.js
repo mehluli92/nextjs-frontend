@@ -3,30 +3,54 @@ import React from 'react'
 
 function Topnav() {
   return (
-    <div className='top-nav container-fluid'>
-      <p className='p-0 m-0'>Region:</p>
-        <button className="btn-largest" type="button" id="region" data-bs-toggle="dropdown" aria-expanded="false">
-          <div>BULAWAYO REGION ZIMBABWE</div>
-          <span className="material-symbols-outlined">expand_more</span>
-        </button>
-          <ul class="dropdown-menu menu-items" aria-labelledby="region">
-            <li><Link className="dropdown-item text-white" href="#">HARARE REGION ZIMBABWE</Link></li>
-            <li><Link className="dropdown-item text-white" href="#">MANICALAND REGION ZIMBABWE</Link></li>
-            <li><Link className="dropdown-item text-white" href="#">MASHONALAND CENTRAL REGION ZIMBABWE</Link></li>
-          </ul>
-      <p className='p-0 m-0'>Store:</p>
-        <button className="btn-largest" type="button" id="store" data-bs-toggle="dropdown" aria-expanded="false">
-          <div>PICK n PAY BRADFIELD</div>
-          <span className="material-symbols-outlined">expand_more</span>
-        </button>
-        <ul class="dropdown-menu menu-items" aria-labelledby="store">
-            <li><Link className="dropdown-item text-white" href="#">HARARE REGION ZIMBABWE</Link></li>
-            <li><Link className="dropdown-item text-white" href="#">MANICALAND REGION ZIMBABWE</Link></li>
-            <li><Link className="dropdown-item text-white" href="#">MASHONALAND CENTRAL REGION ZIMBABWE</Link></li>
-          </ul>
-          <div className='login-register'>
-            <div className='login'>LOGIN</div> | <div className='register'>REGISTER</div>
-          </div>
+    <div>
+          {/* <!-- login/register header section --> */}
+    <header className="login-header">
+        <nav className="navbar navbar-custom ml-4">
+            <div className="navbar-brand">
+                <div className="row">
+
+                    <div className="col-md-6">
+                        {/* <!-- select option dropdown list of provinces in Zimbabwe --> */}
+                        <div className="custom-select">
+                            <select name="province" id="province">
+                                <option value="harare">Harare Region</option>
+                                <option value="bulawayo">Bulawayo Region</option>
+                                <option value="midlands">Midlands Region</option>
+                                <option value="manicaland">Manicaland Region</option>
+                                <option value="masvingo">Masvingo Region</option>
+                                <option value="mashonaland east">Mashonaland East Region</option>
+                                <option value="mashonaland west">Mashonaland West Region</option>
+                                <option value="mashonaland central">Mashonaland Central Region</option>
+                                <option value="matabeleland north">Matabeleland North Region</option>
+                                <option value="matabeleland south">Matabeleland South Region</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        {/* <!-- select option dropdown list of provinces in Zimbabwe --> */}
+                        <div className="custom-select">
+                            <select name="store" id="store">
+                                <option value="PICK n PAY ARUNDEL">Store: PICK n PAY ARUNDEL</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY ASPINDALE</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY JOINA CITY</option>
+                                <option value="PICK n PAY ARUNDEL">Store: PICK n PAY ARUNDEL</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY ASPINDALE</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY JOINA CITY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            {/* <!-- align login/register text to the right --> */}
+            <span className="login-reg-txt">
+                <Link href="/login" className="text-white">Login</Link> 
+                <span class="text-white p-2">|</span>
+                <Link href="/register" className="text-white">Register</Link>
+            </span>
+        </nav>
+    </header>
     </div>
   )
 }
